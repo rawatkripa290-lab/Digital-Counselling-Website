@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form id="registerForm">
+
+                <div class="inputname">
+                    <i class="fas fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="name" id="firstname">
+                    <span>
+                        <i class="fas fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" class="name" id="lastname">
+                    </span>
+                </div>
+                <div class="inputname">
+                    <i class="fas fa-envelope email"></i>
+                    <input type="email" placeholder="E-Mail" class="text" id="email">
+                </div>
+                <div class="inputname">
+                    <i class="fas fa-key lock"></i>
+                    <input type="password" placeholder="Password" class="text">
+                </div>
+                <div class="inputname">
+                    <i class="fas fa-key lock"></i>
+                    <input type="password" placeholder="Confirm Password" class="text" id="confirmpassword">
+                </div>
+                <div class="inputname">
+                    <input type="radio" class="radio" name="r1" value="Male">
+                    <label style="margin-right: 30px;">Male</label>
+
+
+                    <input type="radio" class="radio" name="r1" value="Female">
+                    <label>Female</label>
+                </div>
+                <div class="inputname">
+                    <select class="country">
+                        <option>Select your Country</option>
+                        <option>India</option>
+                        <option>Bnagladesh</option>
+                        <option>Italy</option>
+                        <option>Bhutan</option>
+                        <option>Japan</option>
+                        <option>Sri Lanka</option>
+                    </select>
+                    <div class="arrow"></div>
+                </div>
+                <div class="inputname">
+                    <input type="checkbox" id="cb" class="check">
+                    <label for="cb" class="chec">I accept to terms and condition</label>
+                </div>
+                <div class="inputname">
+                    <input type="submit" class="button" value="Registration">
+                </div>
+
+
+            </form>
+            <div class="page-nav">
+                <span class="nav-arrow left" onclick="goPrev()">&#10094;</span>
+                <span class="nav-arrow right" onclick="goNext()">&#10095;</span>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
